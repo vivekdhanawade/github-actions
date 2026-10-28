@@ -7,7 +7,7 @@ jobs:
   First-job: 
     runs-on: ubuntu-latest
     steps: 
-      -name: Hello
-      run: echo "Helloooooooooo"
-      -name: Byeeeeeeeeeeeeeeeee
-      run:  echo "Byeeeeeeeeeeeee"
+      - name: Hello
+        run: echo "Helloooooooooo"
+      - name: Byeeeeeeeeeeeeeeeee
+        run:  echo "Byeeeeeeeeeeeee"
