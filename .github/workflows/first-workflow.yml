@@ -5,6 +5,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Hello Github Actions
-          run: echo"Hellooooooooooooooooooooo"
+          run: echo "Hellooooooooooooooooooooo"
         - name: Bye Github
-          run: echo"Byeeeeeeeeeeeeeeeee"
+          run: echo "Byeeeeeeeeeeeeeeeee"
