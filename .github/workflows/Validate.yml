@@ -1,6 +1,6 @@
 name : Validate
 
-on : push
+on : workflow-dispatch
 
 jobs:
   Validate-Files:
@@ -13,3 +13,5 @@ jobs:
           run: test -f .github/index.html
         - name: validate js Files
           run: test -f .github/script.js
+        - name: Validate js code
+          run: node --check script.js

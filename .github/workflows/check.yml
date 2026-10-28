@@ -1,0 +1,34 @@
+name : Checks
+
+on : push
+
+jobs: 
+  Validate-HTML:
+    runs-on : ubuntu-latest
+    steps:
+        - name: Checks
+          uses: actions/checkout@v4
+
+        - name: Validate html
+          run: test -f .github/index.html
+
+jobs: 
+  Validate-JS:
+    runs-on : ubuntu-latest
+    steps:
+        - name: Checks
+          uses: actions/checkout@v4
+
+        - name: Validate html
+          run: test -f .github/script.js
+
+jobs: 
+  Validate-both:
+    needs: [Validate-HTML, Validate-JS]
+    runs-on : ubuntu-latest
+    steps:
+        - name: Checks
+          uses: actions/checkout@v4
+
+        - name: Validate html
+          run: test -f .github/index.html
