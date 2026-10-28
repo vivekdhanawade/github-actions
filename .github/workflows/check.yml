@@ -1,6 +1,10 @@
 name : Checks
 
-on : push
+on : 
+  workflow_run:
+    workflow: [first-workflow]
+    types: 
+      - completed
 
 jobs: 
   Validate-HTML:
