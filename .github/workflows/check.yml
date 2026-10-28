@@ -30,5 +30,8 @@ jobs:
         - name: Checks
           uses: actions/checkout@v4
 
-        - name: Validate html
-          run: test -f .github/index.html
+        - name: Validate html code
+          run: npx htmllint .github/index.html
+
+        - name: Validate js code
+          run: node --check .github/script.js
