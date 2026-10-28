@@ -12,7 +12,7 @@ jobs:
         - name: Validate html
           run: test -f .github/index.html
 
-jobs: 
+
   Validate-JS:
     runs-on : ubuntu-latest
     steps:
@@ -22,7 +22,7 @@ jobs:
         - name: Validate html
           run: test -f .github/script.js
 
-jobs: 
+
   Validate-both:
     needs: [Validate-HTML, Validate-JS]
     runs-on : ubuntu-latest
