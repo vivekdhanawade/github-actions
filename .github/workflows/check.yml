@@ -2,7 +2,7 @@ name : Checks
 
 on : 
   workflow_run:
-    workflow: [First-Workflow]
+    workflows: [First-Workflow]
     types: 
       - completed
 
